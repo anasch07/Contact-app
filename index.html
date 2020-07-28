@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="contact-clean">
+        <form method="post">
+            <h2 class="text-center">Contact App</h2>
+            <h5>First Name</h3>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="fname" placeholder="First Name" size="20" id="first-name" required></div>
+                <h5>Last Name</h3>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="lname" placeholder="Last Name" size="20" id="last-name" required></div>
+                    <h5>Phone Number</h3>
+                        <div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="tel" name="numero" placeholder="50-111-123" pattern="[0-9]{8}" size="20" id="phone-number-1" required>
+                        </div>
+                        <h5>Street</h3>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="street" placeholder="Street" size="50" id="street-1" required>
+                            </div>
+                            <h5>City</h3>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="city" placeholder="City" size="20" id="city-1" required>
+                                </div>
+                                <h5>State</h3>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="name" placeholder="State" size="20" id="state-1" required></div>
+
+                                    <div class="form-group"><button class="btn btn-primary" type="submit">Add Contact </button>
+                                        <button class="btn btn-primary" type="reset">reset </button>
+                                    </div>
+        </form>
+        <div id="contact-display" style="display: none">
+            <h2 id="full-name-display"></h2>
+            <p>First name: <span id="first-name-display"></span></p>
+            <p>Last name: <span id="last-name-display"></span></p>
+            <p>Phone numbers:</p>
+            <ul id="phone-number-display">
+                <li id="phone-number-1-display"></li>
+                <li id="phone-number-2-display"></li>
+            </ul>
+            <p>Addresses:</p>
+            <ul id="addresses-display">
+                <li id="address-1-display"></li>
+                <li id="address-2-display"></li>
+            </ul>
+
+            <input type="submit" id="hide-contact-display" class="btn btn-primary" value="Hide" onclick="javascript:hideContactDisplay()">
+
+        </div>
+        <div id="contacts-list-container">
+            <h2>Contacts:</h2>
+            <ul id="contacts-list"></ul>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

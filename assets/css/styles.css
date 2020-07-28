@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.elementAjout {
+    width: 50%;
+    outline: 3px solid rgb(5, 199, 233);
+    padding-left: 25%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
